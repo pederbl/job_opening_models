@@ -1,6 +1,5 @@
 class JobOpening
   include Mongoid::Document
-  referenced_in :found_job_opening
 
   field :listing_id, type: Integer
   field :updated_at, type: DateTime
@@ -8,8 +7,8 @@ class JobOpening
   field :publish_on, type: Date
   #field :publish_until, type: Date
 
-  field :source, default: "ec.europa.eu" 
-  field :source_listing_id
+  field :source 
+  field :source_id
   field :source_url
 
   field :title
@@ -39,5 +38,5 @@ class JobOpening
 
   validates :updated_at, presence: true
   validates :source, presence: true
-  validates :source_listing_id, presence: true
+  validates :source_id, presence: true
 end
