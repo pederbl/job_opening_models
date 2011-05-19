@@ -14,7 +14,7 @@ class Duration
   field :ends_on, type: DateTime
  
   # Is the position a substitute
-  field :substitute, type: Boolean
+  field :sub, type: Boolean
 
   # An additional description of the duration.
   field :text, type: Hash

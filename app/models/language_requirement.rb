@@ -1,6 +1,6 @@
 class LanguageRequirement
   include Mongoid::Document
-  embedded_in :requirements, reverse_of: :language
+  embedded_in :requirements, reverse_of: :languages
 
 
   # IETF language code 
@@ -12,6 +12,6 @@ class LanguageRequirement
   # 3 ILR Level 3 - Professional working proficiency
   # 4 ILR Level 4 - Full professional proficiency
   # 5 ILR Level 5 - Native or bilingual proficiency
-  field :fluency, type: Integer
+  field :proficiency, type: Integer
 
 end

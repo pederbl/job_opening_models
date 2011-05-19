@@ -27,5 +27,6 @@ class Requirements
   field :text, type: Hash
   
   embeds_many :languages, class_name: "LanguageRequirement"
+  #field :languages, type: Array
 
 end

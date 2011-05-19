@@ -2,7 +2,6 @@ class JobOpening
   include Mongoid::Document
   include Mongoid::TranslatedStrings
 
-  field :listing_id, type: Integer
   field :updated_at, type: DateTime
   field :deleted_at, type: DateTime
   field :publish_at, type: DateTime
